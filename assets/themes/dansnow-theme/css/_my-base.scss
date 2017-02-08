@@ -1,0 +1,60 @@
+@import 'bourbon/bourbon';
+
+$line-height: 26px;
+$font-stack: consolas, monaco, monospace;
+$webfont: UbuntuMono-B, consolas, monaco, monospace;
+
+@include font-face('UbuntuMono-B', '/assets/themes/the-program/font/UbuntuMono-B-webfont', $file-formats: eot woff ttf svg)
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $webfont;
+}
+
+$base03:    #2d2d2d;
+$base02:    #393939;
+$base01:    #515151;
+$base0:     #cccccc;
+$subtle:    #999999;
+$yellow:    #ffcc66;
+$orange:    #f99157;
+$red:       #f2777a;
+$violet:    #cc99cc;
+$blue:      #6699cc;
+$cyan:      #66cccc;
+$green:     #99cc99;
+
+
+$noise-100-90-5: '/assets/themes/the-program/skin/100-90-5-monochrome.png'; // http://noisepng.com/
+$cross-hair: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAR0lEQVQYGYVOQQoAIAizHuJXpafqR4wFCw9Ggji2OSbubpkp3UI7Qmcidz9JIKniAYITEQasqovcJHhelquxFf9LVjfTeKFtWPOYLQ+xHqUAAAAASUVORK5CYII='; // http://ptrn.it/AmYV5d
+
+/*
+List modules
+.list-linear  - list line up horizontally
+
+No styleguide reference.
+ */
+
+.list-linear {
+  letter-spacing: -0.31em;
+  letter-spacing: normal;
+  word-spacing: -0.43em;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    display: inline;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-right: 16px;
+    word-spacing: normal;
+    vertical-align: middle;
+    zoom: 1;
+    &:last-child { margin-right: 0; }
+  }
+}

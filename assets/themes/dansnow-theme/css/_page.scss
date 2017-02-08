@@ -1,0 +1,33 @@
+@import 'variables';
+
+.entry-title {
+  border-bottom: $text-color solid 2px;
+  font-size: 1.5em;
+}
+
+.unit-body-inner {
+  display: flex;
+}
+
+.vcard {
+  max-width: 30%;
+  padding: 5px 10px;
+}
+
+.recent {
+  margin-top: 10px;
+}
+
+.entry-content {
+  flex: 1;
+  padding: 5px 3px;
+}
+
+.tag_box {
+  a {
+    span {
+      font-size: .8em;
+      vertical-align: super;
+    }
+  }
+}

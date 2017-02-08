@@ -1,0 +1,25 @@
+@import 'variables';
+
+pre {
+  background-color: $bg-color;
+
+  code {
+    background-color: $bg-color;
+    color: $text-color;
+  }
+}
+
+code {
+  background-color: $highlight-color;
+  padding: 0 2px;
+}
+
+.gl {
+  border-right: $text-color solid 1px;
+  padding-right: 5px;
+  width: 3em;
+}
+
+.code {
+  padding-left: 5px;
+}
