@@ -4,7 +4,7 @@ $line-height: 26px;
 $font-stack: consolas, monaco, monospace;
 $webfont: UbuntuMono-B, consolas, monaco, monospace;
 
-@include font-face('UbuntuMono-B', '/assets/themes/the-program/font/UbuntuMono-B-webfont', $file-formats: eot woff ttf svg)
+@include font-face('UbuntuMono-B', '/assets/themes/dansnow-theme/font/UbuntuMono-B-webfont', $file-formats: eot woff ttf svg)
 
 h1,
 h2,
