@@ -23,6 +23,24 @@
   padding: 5px 3px;
 }
 
+.list-linear {
+  letter-spacing: normal;
+  list-style: none;
+  padding-left: 0;
+  word-spacing: -.43em;
+
+  li {
+    display: inline;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-right: 16px;
+    vertical-align: middle;
+    word-spacing: normal;
+    zoom: 1;
+    &:last-child { margin-right: 0; }
+  }
+}
+
 .list-category,
 .list-tag,
 .tag_box {
