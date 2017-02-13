@@ -1,0 +1,17 @@
+@import 'variables';
+
+$media-types: (
+  phone: '(max-width: #{$phone-width})',
+  tablet: '(min-width: #{$phone-width + 1}) and (max-width: #{$tablet-width})',
+  tablet-landspace: '(min-width: #{$tablet-width + 1}) and (max-width: #{$desktop-width})',
+  desktop: '(min-width: #{$desktop-width + 1})',
+);
+
+@mixin respond-to($media) {
+  @if not map-contains($media-types, $media) {
+    @error '#{$media} is not a known media type';
+  }
+  @media screen and #{map-get($media-types, $media)} {
+    @content;
+  }
+}
