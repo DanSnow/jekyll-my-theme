@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'helper';
 
 .entry-title {
   border-bottom: $text-color solid 2px;
@@ -6,11 +7,25 @@
 }
 
 .unit-body-inner {
+  @include respond-to(phone) {
+    flex-direction: column;
+  }
+  @include respond-to(tablet) {
+    flex-direction: column;
+  }
   display: flex;
   flex-direction: row-reverse;
 }
 
 .vcard {
+  @include respond-to(phone) {
+    max-width: 100%;
+    width: 100%;
+  }
+  @include respond-to(tablet) {
+    max-width: 100%;
+    width: 100%;
+  }
   max-width: 30%;
   padding: 5px 10px;
 }
