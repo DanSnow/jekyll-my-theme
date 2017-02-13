@@ -5,11 +5,13 @@ const sass = require('gulp-sass')
 
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
+const mqpacker = require('css-mqpacker')
 const cssPath = './assets/themes/dansnow-theme/css'
 
 gulp.task('css', () => {
   const processors = [
     autoprefixer,
+    mqpacker,
     cssnano
   ]
 
