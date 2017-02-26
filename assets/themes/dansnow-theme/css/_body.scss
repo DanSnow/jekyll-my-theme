@@ -1,9 +1,13 @@
-@import 'variables';
+html {
+  height: 100%;
+}
 
 body {
   background-color: $bg-color;
   color: $text-color;
   font-family: $webfont;
+  font-size: $size-normal;
+  height: 100%;
 }
 
 h1,

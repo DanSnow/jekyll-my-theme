@@ -1,17 +1,9 @@
-@import 'flex-grid';
-
 .nav-global {
   margin-right: 50px;
 
-  ul {
-    @extend %row;
-
-    & > li {
-      @extend .col-md;
-    }
-  }
-
   li {
+    text-align: center;
+
     &:hover {
       border-bottom: $text-color solid 2px;
     }
@@ -20,7 +12,6 @@
   a {
     border-bottom: 0;
     color: $text-color;
-    text-align: center;
 
     &:hover {
       text-decoration: none;
@@ -29,10 +20,7 @@
 
   .logo {
     border-bottom: $text-color solid 2px;
-    display: inline-block;
-    flex: 2;
     font-size: 1.25em;
-    text-align: center;
 
     &::before {
       content: '.';

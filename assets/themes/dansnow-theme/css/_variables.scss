@@ -1,19 +1,7 @@
 // Font
-$webfont: 'Roboto Mono', consolas, monaco, monospace;
-
-// Color
-$base03:    #2d2d2d;
-$base02:    #393939;
-$base01:    #515151;
-$base0:     #ccc;
-$subtle:    #999;
-$yellow:    #fc6;
-$orange:    #f99157;
-$red:       #f2777a;
-$violet:    #c9c;
-$blue:      #69c;
-$cyan:      #6cc;
-$green:     #9c9;
+$webfont: 'Roboto Mono', Consolas, monaco, monospace;
+$family-monospace: $webfont;
+$family-primary: $webfont;
 
 // Theme color
 $bg-color: #222;
@@ -21,7 +9,16 @@ $text-color: #ddd;
 $link-color: #eee;
 $link-hover: #eddd05;
 $link-decoration: #ad4346;
-$highlight-color: $base02;
+$highlight-color: #272822;
+
+$body-background: $grey-darker;
+$background: $grey-darker;
+$text: $grey-lighter;
+$text-light: $white-ter;
+$text-strong: $grey-light;
+$code: $text;
+
+$size-normal: 1.2rem;
 
 // RWD breakpoint
 $desktop-width: 1024px;
