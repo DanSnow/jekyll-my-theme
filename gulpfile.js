@@ -21,7 +21,7 @@ gulp.task('css', () => {
     .pipe(gulp.dest(cssPath))
 })
 
-gulp.task('watch', () => {
+gulp.task('watch', ['css'], () => {
   gulp.watch(path.join(cssPath, '**', '*.scss'), ['css'])
 })
 
