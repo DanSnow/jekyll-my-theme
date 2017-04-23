@@ -11,14 +11,13 @@
     {% feed_meta %}
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     {% include JB/analytics %}
   </head>
   <body>
     <div id="page" class="page-container hentry">
       <header class="the-header">
-        <div class="unit-head">
-          <div class="unit-inner unit-head-inner">
+        <div>
+          <div>
             <nav class="nav-global">
               <ul class="columns is-desktop">
                 <li class="logo column is-one-quarter is-desktop"><a href="/">{{ site.title }}</a></li>
@@ -28,8 +27,8 @@
                 <li class="tag column"><a href="/tags.html">tags</a></li>
               </ul>
             </nav>
-          </div><!-- unit-inner -->
-        </div><!-- unit-head -->
+          </div>
+        </div>
         <a href="https://github.com/{{ site.author.github }}/{{ site.author.github }}.github.io" class="github-corner" aria-label="View source on Github">
           <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -40,12 +39,12 @@
           </svg>
         </a>
       </header>
-      <div class="body" role="main">
-        <div class="unit-body">
-          <div class="unit-inner unit-body-inner">
+      <div role="main">
+        <div>
+          <div class="main-container">
             <div class="entry-content">
               {{ content }}
-            </div><!-- content -->
+            </div>
             <div class="misc vcard">
               <h4>About</h4>
               <ul>
@@ -64,21 +63,21 @@
                   {% include JB/pages_list %}
                 </ul>
               </div>
-            </div><!-- misc -->
-          </div><!-- unit-inner -->
-        </div><!-- unit-body -->
-      </div><!-- body -->
+            </div>
+          </div>
+        </div>
+      </div>
       <footer class="the-footer">
-        <div class="unit-foot">
-          <div class="unit-inner unit-foot-inner">
+        <div>
+          <div>
             <p class="licence">
               Theme: <a href="https://github.com/DanSnow/jekyll-my-theme">link to theme</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
               Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
             </p>
-          </div><!-- unit-foot-inner -->
-        </div><!-- unit-foot -->
+          </div>
+        </div>
       </footer>
-    </div><!-- page -->
+    </div>
     <div id="fb-root"></div>
     <script>
       // Twitter widget
