@@ -1,8 +1,7 @@
-@import 'ress';
-@import 'bourbon/bourbon';
 @import 'bulma/sass/utilities/all';
 @import 'variables';
-@import 'bulma/sass/base/all';
+@import 'bulma/sass/base/helpers';
+@import 'ress';
 @import 'bulma/sass/grid/columns';
 @import 'bulma/sass/elements/content';
 @import 'github-corner';

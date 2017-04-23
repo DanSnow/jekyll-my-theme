@@ -6,7 +6,7 @@
   font-size: 1.5em;
 }
 
-.unit-body-inner {
+.main-container {
   @include respond-to(phone) {
     flex-direction: column;
   }
@@ -27,7 +27,11 @@
     width: 100%;
   }
   max-width: 30%;
-  padding: 5px 10px;
+  padding: 20px 10px;
+
+  ul {
+    list-style-type: none;
+  }
 }
 
 .recent {
@@ -65,5 +69,11 @@
       font-size: .8em;
       vertical-align: super;
     }
+  }
+}
+
+.highlight {
+  table {
+    width: 100%;
   }
 }

@@ -1,3 +1,19 @@
+@import 'helper';
+
+.row.is-desktop {
+  display: flex;
+  @include respond-to('phone') {
+    display: block;
+  }
+}
+
+.col {
+  display: block;
+  width: auto;
+  flex: 1;
+}
+
+
 .nav-global {
   margin-right: 50px;
 
@@ -12,10 +28,7 @@
   a {
     border-bottom: 0;
     color: $text-color;
-
-    &:hover {
-      text-decoration: none;
-    }
+    text-decoration: none;
   }
 
   .logo {
